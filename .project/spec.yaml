@@ -47,6 +47,11 @@ environment:
       gid: ""
       username: ""
     package_managers:
+    - name: conda
+      binary_path: /opt/conda/bin/conda
+      installed_packages:
+      - python=3.9.18
+      - pip
     - name: apt
       binary_path: /usr/bin/apt
       installed_packages:
@@ -54,8 +59,7 @@ environment:
       - curl
     - name: pip
       binary_path: /opt/conda/bin/pip
-      installed_packages:
-      - ca-certificates
+      installed_packages: []
     package_manager_environment:
       name: ""
       target: ""
