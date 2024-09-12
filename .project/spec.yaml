@@ -54,7 +54,8 @@ environment:
       - curl
     - name: pip
       binary_path: /opt/conda/bin/pip
-      installed_packages: []
+      installed_packages:
+      - ca-certificates
     package_manager_environment:
       name: ""
       target: ""
